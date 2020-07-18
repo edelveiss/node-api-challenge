@@ -124,11 +124,11 @@ function validateProject(req, res, next) {
     if (!req.body.name && !req.body.description) {
       res.statusMessage = "missing required name and description fields";
       res.status(400).json({ message: "missing required name field" });
-      // res.status(400).end();
+      //res.status(400).end();
     } else if (!req.body.name) {
       res.statusMessage = "missing required name field";
       res.status(400).json({ message: "missing required name field" });
-      // res.status(400).end();
+      //res.status(400).end();
     } else if (!req.body.description) {
       res.statusMessage = "missing required description field";
       res.status(400).json({ message: "missing required description field" });
