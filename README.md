@@ -40,13 +40,37 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+With Express we can build RESTful web services that work with JSON.
+Main features of Express are Middleware, Routing, and Convenience Helpers.
+
 - [ ] Describe Middleware?
+
+We can use Express Middleware to add features to Express. Middleware is an array of functions that get executed in the order they are introduced into the server code.
+There are different types of middleware:
+
+- Built-in middleware.
+- Third-party middleware.
+- Custom middleware.
 
 - [ ] Describe a Resource?
 
-- [ ] What can the API return to help clients know if a request was successful?
+Principles of REST (Representational State Transfer):
+
+- everything is a resource (a user, a blog post, a comment etc.)
+- each resource is accessible via unique URI. We are using resource names and HTTP methods to define these URIs.
+- communication is done over the stateless protocol (HTTP)
+
+* [ ] What can the API return to help clients know if a request was successful?
+
+A status code of 200-299 means Successful responses: ex:
+200 OK,
+201 Created,
+202 Accepted,
+204 No Content
 
 - [ ] How can we partition our application into sub-applications?
+
+Express provides a way to break the application into different request handlers for each URL+HTTP method combination. It is called Routing. We can have a single URL per resource and execute different code based on the HTTP Method used.
 
 ## Minimum Viable Product
 
